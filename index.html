@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="icon.png">
+    <title>Gridfinity Collection</title>
+
+</head>
+<body>
+
+    <div style="height: 1px; margin-bottom: 5rem;"></div>
+
+    <h1 class="pageTitle">Gridfinity Collection</h1>
+
+    <div id="searchContainer">
+        <input type="text" id="searchBar" placeholder="Find your model...">
+        <select id="categoryFilter">
+            <option value="">All</option>
+            <!-- Options will be populated dynamically -->
+        </select>
+     </div>
+
+
+    <div id="tableContainer"></div>
+
+    <div id="noResults" style="display: none;">
+        <img src="oops.png" alt="Description of the image" style="height: 4rem; width: auto; display: inline; margin-top: 2rem;">
+    
+    </div>
+    
+
+    <div class="buttonContainerRight">
+        <button class="styledButton">Github</button>
+        <button class="styledButton">Discord</button>
+    </div>
+
+    <div class="buttonContainerLeft">
+        <button class="styledButton">Database</button>
+      </div>
+
+      <div class="bottomHeader">
+        <p>This database is a work in progress, please help out on the discord! </p>
+       </div>
+
+       <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+       <script type="module" src="index.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+        
+</body>
+</html>
